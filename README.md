@@ -1,0 +1,2 @@
+# startFramWork
+angular simple project
