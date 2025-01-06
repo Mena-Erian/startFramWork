@@ -1,0 +1,40 @@
+.parent {
+  background-color: var(--main-color-1) !important;
+}
+.icon-qsudo {
+  position: relative;
+}
+.icon-qsudo::after {
+  content: "";
+  width: 75px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 160%;
+  transform: translateY(-50%);
+}
+.icon-qsudo::before {
+  content: "";
+  width: 75px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 160%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  img {
+    width: 75% !important;
+  }
+}
+
+@media (min-width: 960px) {
+  img {
+    width: 50% !important;
+  }
+}

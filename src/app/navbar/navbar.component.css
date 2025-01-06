@@ -1,0 +1,16 @@
+.nav-active {
+  background-color: var(--main-color-1);
+  color: white;
+}
+a {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  width: min-content;
+}
+nav {
+  background-color: var(--main-color-2);
+}
+.navbar-nav {
+  --bs-nav-link-hover-color: white;
+}

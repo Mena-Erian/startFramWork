@@ -1,0 +1,66 @@
+.icon-qsudo {
+  position: relative;
+}
+.icon-qsudo::after {
+  content: "";
+  width: 75px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--main-color-3);
+  position: absolute;
+  top: 50%;
+  right: 160%;
+  transform: translateY(-50%);
+}
+.icon-qsudo::before {
+  content: "";
+  width: 75px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--main-color-3);
+  position: absolute;
+  top: 50%;
+  left: 160%;
+  transform: translateY(-50%);
+}
+.und-lin-input-group {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem auto;
+}
+.und-lin-input-group input {
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 1rem 0.75rem;
+  outline: 0;
+  border-bottom: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.und-lin-input-group label {
+  /* background-color: gainsboro; */
+  padding: 0.5rem;
+  color: var(--main-color-1);
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.und-lin-input-group:focus-within {
+  overflow: visible;
+}
+.und-lin-input-group:focus-within label {
+  z-index: 1;
+
+  top: -20px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -webkit-appearance: textfield;
+}

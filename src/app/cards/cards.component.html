@@ -1,0 +1,77 @@
+<div class="row g-3 mb-4">
+  @for (item of items; track $index) {
+  <div class="col-md-4">
+    <div
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      class="position-relative"
+      (click)="showltcont(item, $index)"
+    >
+      <img class="w-100 rounded-2" [src]="items[$index].imgSrc" alt="" />
+      <div
+        class="inner position-absolute top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center"
+      >
+        <i class="fa-solid fa-plus text-white"></i>
+      </div>
+    </div>
+  </div>
+  } @empty {
+  <h3>not fond</h3>
+  }
+
+  <div
+    (keydown.ArrowLeft)="slideLeft()"
+    (keydown.ArrowRight)="slideRight()"
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel "
+    aria-hidden="true"
+  >
+    <div class="modal-dialog rounded-2 shadow-lg">
+      <div class="modal-content">
+        <div class="modal-body position-relative">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <img
+            [src]="itemSrc.imgSrc"
+            class="w-100 position-absolute top-0 start-0 end-0 bottom-0 rounded-2"
+          />
+          <i
+            (click)="slideRight()"
+            class="fa-solid fa-arrow-alt-circle-right position-absolute position-middle-e"
+          ></i>
+          <i
+            (click)="slideLeft()"
+            class="fa-solid fa-arrow-alt-circle-left position-absolute position-middle-s"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+ <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+-->
+
+<!-- my custom model -->
+<!-- <div
+    #lightContainer
+    [class.d-none]="true"
+    class="lightContainer position-absolute top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center"
+  >
+    <img class="w-75 rounded-2" [src]="itemSrc.imgSrc" alt="" />
+  </div> -->

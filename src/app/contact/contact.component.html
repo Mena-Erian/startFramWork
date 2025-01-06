@@ -1,0 +1,36 @@
+<section class="mb-5">
+  <div
+    class="container d-flex align-items-center justify-content-center flex-column"
+  >
+    <h1 class="text-center fw-bolder my-3">CONTACT SECTION</h1>
+    <div class="icon-qsudo mb-2">
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+  <form class="container mt-5" (submit)="form($event)">
+    <div class="und-lin-input-group my-4">
+      <input type="text" id="userName" placeholder="User Name:" />
+      <label for="userName">User Name:</label>
+    </div>
+    <div class="und-lin-input-group my-4">
+      <input
+        (input)="putRegexNumber()"
+        type="number"
+        id="userAge"
+        placeholder="User Age:"
+      />
+      <label for="userAge">User Age:</label>
+    </div>
+    <div class="und-lin-input-group my-4">
+      <input type="email" id="mail" placeholder="User Email:" />
+      <label for="mail">User Email:</label>
+    </div>
+    <div class="und-lin-input-group my-4">
+      <input type="password" id="pass" placeholder="User Password:" />
+      <label for="pass">User Password:</label>
+    </div>
+    <button class="btn btn-main d-block mt-4 mx-auto" type="submit">
+      Send Message
+    </button>
+  </form>
+</section>

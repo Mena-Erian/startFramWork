@@ -1,0 +1,25 @@
+.icon-qsudo {
+  position: relative;
+}
+.icon-qsudo::after {
+  content: "";
+  width: 75px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--main-color-3);
+  position: absolute;
+  top: 50%;
+  right: 160%;
+  transform: translateY(-50%);
+}
+.icon-qsudo::before {
+  content: "";
+  width: 75px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--main-color-3);
+  position: absolute;
+  top: 50%;
+  left: 160%;
+  transform: translateY(-50%);
+}

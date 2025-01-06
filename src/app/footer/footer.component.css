@@ -1,0 +1,16 @@
+section * {
+  color: white;
+}
+footer {
+  background-color: var(--main-color-2);
+}
+footer > p {
+  color: white;
+  text-align: center;
+  background-color: var(--main-color-3);
+}
+.icons i {
+  margin: 10px 5px;
+  border-radius: 50%;
+  padding: 10px;
+}
